@@ -1,0 +1,12 @@
+<p>bst-two works!</p>
+
+<div class="list-video">
+  <div *ngFor="let item of listV" class="list-item">
+    <p><a href="{{item.link}}">Link...</a></p>
+    <app-dialog [data]="item.iframeHTML"></app-dialog>
+    <div style="position: relative">
+      <div style="position: absolute;top: 0;left: 0;right: 0; bottom: 0;background: black"></div>
+    <div [innerHTML]="item.iframeHTML | noSanitize"></div>
+    </div>
+  </div>
+</div>

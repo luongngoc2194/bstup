@@ -1,0 +1,13 @@
+<h1>Bộ Sưu Tập 1</h1>
+<div class="">
+  <div class="list-img">
+    <div *ngFor="let item of listImg" [ngStyle]="" class="list-item">
+      <div class="card" style="width: 20rem;height: 30rem" [ngStyle]="{'background': '#fff url(' + item.imgLink + ') no-repeat center/contain'}">
+<!--        <img src="{{item.imgLink}}" class="card-img-top" alt="...">-->
+        <div class="card-body">
+          <a href="{{item.link}}">Link...</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
