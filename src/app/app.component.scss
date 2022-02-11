@@ -35,20 +35,24 @@
 html {
   scroll-behavior: smooth;
 }
-body{
+
+body {
   margin: 0;
   padding: 0;
-  font-family:Poppins;
+  font-family: Poppins;
 }
-h1{
+
+h1 {
   font-size: 50px;
-  font-family:Audiowide;
+  font-family: Audiowide;
 }
-p{
+
+p {
   font-size: 24px;
   line-height: 50px;
 }
-.navbar{
+
+.navbar {
   position: fixed;
   display: flex;
   justify-content: center;
@@ -60,12 +64,23 @@ p{
   height: 70px;
   z-index: 1;
 }
-.nav{
+
+.nav {
   display: flex;
   justify-content: right;
   list-style: none;
   margin-right: 15%;
+
+  a {
+    padding: 12px 15px;
+
+  }
+  a:hover {
+    background: antiquewhite;
+    border-radius: 5px;
+  }
 }
+
 .logo {
   flex: 1 1 auto;
   margin-left: 10%;
@@ -74,21 +89,25 @@ p{
   font-weight: bold;
   font-size: 35px;
 }
-img{
+
+img {
   width: 20%;
 }
-a,li>span{
-  margin: 15px;
+
+a, li > span {
+  //margin: 15px;
   color: #000;
   text-decoration: none;
   text-transform: uppercase;
 }
 
-a:hover,li>span:hover{
-  color: #000;
+a:hover, li > span:hover {
+  background: #fefefe;
+  color: #f31f1f;
   cursor: pointer;
 }
-.banner-area{
+
+.banner-area {
   position: relative;
   background-image: url(https://i.postimg.cc/GtRM7mdX/1.jpg);
   width: 100%;
@@ -97,7 +116,7 @@ a:hover,li>span:hover{
   background-size: cover;
 }
 
-.about-area, .port-area, .service-area, .contact-area{
+.about-area, .port-area, .service-area, .contact-area {
   position: relative;
   display: flex;
   justify-content: space-around;
@@ -107,29 +126,35 @@ a:hover,li>span:hover{
   width: 100%;
   min-height: 700px;
 }
-.text-part{
+
+.text-part {
   width: 90%;
   height: 80%;
 }
-.about-area{
+
+.about-area {
   background-color: #fefefe;
 }
-.port-area{
+
+.port-area {
   background-color: #262626;
   color: #fff;
 }
-.service-area{
+
+.service-area {
   background-color: #fefefe;
 }
-.contact-area{
+
+.contact-area {
   background-color: #262626;
   color: #fff;
 }
 
 .dropdown-item:active {
-  background-color: rgba(0, 0, 0, 0.2)!important;
+  background-color: rgba(0, 0, 0, 0.2) !important;
 }
-.log-pass{
+
+.log-pass {
   width: 80px;
   height: 40px;
   position: fixed;
@@ -137,7 +162,7 @@ a:hover,li>span:hover{
   bottom: 20px;
   z-index: 2;
 
-  button{
+  button {
     width: 100%;
     height: 100%;
     border: none;
@@ -148,9 +173,10 @@ a:hover,li>span:hover{
     transition: ease-out 0.3s;
     //font-size: 2rem;
     outline: none;
-  };
+  }
+;
 
-  button:hover{
+  button:hover {
     box-shadow: inset 300px 0 0 0 #f9e506;
     cursor: pointer;
     color: #262626;

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {VideoService} from '../../service/video.service';
 import {VideoType} from '../../model/video-type';
-import { VideoIframeOne} from '../../data/video';
+import {VideoIframeOne, VideoIframeThree, VideoIframeTwo} from '../../data/video';
 
 @Component({
   selector: 'app-bst-two',
@@ -10,6 +10,7 @@ import { VideoIframeOne} from '../../data/video';
 })
 export class BstTwoComponent implements OnInit {
 
+  controlBtn = 1;
   listV = VideoIframeOne;
 
   constructor(public vService: VideoService) {
@@ -22,4 +23,22 @@ export class BstTwoComponent implements OnInit {
     // });
   }
 
+  controlListFunc(number: number) {
+    if (number === 1) {
+      this.controlBtn = number;
+      this.listV = [...VideoIframeOne];
+    } else if (number === 2) {
+      this.controlBtn = number;
+
+      this.listV = [...VideoIframeTwo];
+    } else if (number === 3) {
+      this.controlBtn = number;
+
+      this.listV = [...VideoIframeThree];
+    } else if (number === 0) {
+      this.controlBtn = number;
+
+      this.listV = [...VideoIframeOne, ...VideoIframeTwo, ...VideoIframeThree];
+    }
+  }
 }

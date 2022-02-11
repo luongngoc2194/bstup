@@ -5,7 +5,6 @@ import {AppRoutingModule} from './app-routing.module';
 import {AppComponent} from './app.component';
 import {BstOneComponent} from './component/bst-one/bst-one.component';
 import {BstTwoComponent} from './component/bst-two/bst-two.component';
-import {BstThreeComponent} from './component/bst-three/bst-three.component';
 import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -20,7 +19,6 @@ import { DialogPopupComponent } from './component/dialog/dialog/dialog-popup/dia
     AppComponent,
     BstOneComponent,
     BstTwoComponent,
-    BstThreeComponent,
     NoSanitizePipe,
     DialogComponent,
     DialogPopupComponent
