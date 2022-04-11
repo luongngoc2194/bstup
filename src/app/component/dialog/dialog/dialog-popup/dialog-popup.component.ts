@@ -34,41 +34,4 @@ export class DialogPopupComponent implements OnInit, AfterViewInit {
     this.div.nativeElement.children[0].setAttribute('width', width * 2);
   }
 
-  // toggleVideo() {
-  //   this.videoplayer.nativeElement.play();
-  // }
-  //
-  // playPause() {
-  //   const myVideo: any = document.getElementById('my_video_1');
-  //   if (myVideo.paused) {
-  //     myVideo.play();
-  //   } else {
-  //     myVideo.pause();
-  //   }
-  // }
-  //
-  // makeBig() {
-  //   const myVideo: any = document.getElementById('my_video_1');
-  //   myVideo.width = 560;
-  // }
-  //
-  // makeSmall() {
-  //   const myVideo: any = document.getElementById('my_video_1');
-  //   myVideo.width = 320;
-  // }
-  //
-  // makeNormal() {
-  //   const myVideo: any = document.getElementById('my_video_1');
-  //   myVideo.width = 420;
-  // }
-  //
-  // skip(value) {
-  //   const video: any = document.getElementById('my_video_1');
-  //   video.currentTime += value;
-  // }
-  //
-  // restart() {
-  //   const video: any = document.getElementById('my_video_1');
-  //   video.currentTime = 0;
-  // }
 }

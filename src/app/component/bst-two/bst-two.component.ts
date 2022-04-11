@@ -12,15 +12,26 @@ export class BstTwoComponent implements OnInit {
 
   controlBtn = 1;
   listV = VideoIframeOne;
+  hover: boolean;
+  count = 0;
 
   constructor(public vService: VideoService) {
   }
 
   ngOnInit(): void {
+    this.addMouseControl(this.listV, false);
     // this.vService.getList().subscribe(data => {
     //   this.listV = data;
     //   console.log(this.listV)
     // });
+  }
+
+  addMouseControl(arr, bl) {
+    arr.forEach(item => {
+      if (item.imgLink && item.imgLink !== '') {
+        item.hover = bl;
+      }
+    });
   }
 
   controlListFunc(number: number) {
@@ -40,5 +51,11 @@ export class BstTwoComponent implements OnInit {
 
       this.listV = [...VideoIframeOne, ...VideoIframeTwo, ...VideoIframeThree];
     }
+    this.addMouseControl(this.listV, false);
+  }
+
+  ShowImage() {
+    this.addMouseControl(this.listV, true);
+    console.log(this.listV);
   }
 }

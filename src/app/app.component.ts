@@ -8,6 +8,6 @@ import {Component} from '@angular/core';
 export class AppComponent {
   title = 'bst';
   choose = 0;
-  login: boolean;
+  login: boolean =true;
   openLogPass = false;
 }
