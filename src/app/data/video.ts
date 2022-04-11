@@ -583,6 +583,34 @@ export const VideoIMG = [
 
 export const Imagedata = [
   {
+    link: 'https://18comic.vip/photo/145742',
+    imgLink: 'https://cdn-msp.18comic.org/media/albums/145742.jpg?v=1591777801'
+  },
+  {
+    link: 'https://18comic.vip/photo/139321',
+    imgLink: 'https://cdn-msp.18comic.org/media/albums/139321.jpg?v=1591777801'
+  },
+  {
+    link: 'https://18comic.vip/photo/147489',
+    imgLink: 'https://cdn-msp.18comic.vip/media/albums/147489.jpg?v=1591777801'
+  },
+  {
+    link: 'https://18comic.vip/photo/146210',
+    imgLink: 'https://cdn-msp.18comic.org/media/albums/146210.jpg?v=1591777801'
+  },
+  {
+    link: 'https://18comic.vip/photo/146340',
+    imgLink: 'https://cdn-msp.18comic.org/media/albums/146340.jpg?v=1591777801'
+  },
+  {
+    link: 'https://18comic.vip/photo/151280',
+    imgLink: 'https://cdn-msp.18comic.vip/media/albums/151280.jpg?v=1591777801'
+  },
+  {
+    link: '',
+    imgLink: ''
+  },
+  {
     link: 'https://hentaivn.moe/29787-54462-xem-truyen-tien-kiem-ki-hiep-truyen-oneshot.html',
     imgLink: 'https://t.htvncdn.net/images/190/1647244698-06_1962241-0001.jpg'
   },
